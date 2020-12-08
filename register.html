@@ -6,23 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <table border="1">
+    <table border="1">
+    <form action="about.html">
+        
             <tr>
-                <th>Name<input type="text" name="username" placeholder="enter name"></th> </tr>
-                <tr><th>password<input type="password" name="password" placeholder="pass"></th></tr>
-                <tr><th>Email<input type="text" name="email" placeholder="enter email"></th></tr>
-                <tr><th>phone number<input type="text" name="phone number" placeholder="enter phone number"> </th></tr>
-                <tr><th>Qualification<input type="radio" name="qual" checked value="BE/BTECH">BE/BTECH
-                    <input type="radio" name="qual" checked value="BSC">BSC </th></tr>
-                <tr><th>Technology<select name="course" multiple size="3">
+                <td>Name</td>
+                <td><input type="text" name="username" placeholder="enter name" required></td> </tr>
+                <tr><td>password</td>
+                    <td><input type="password" name="password" placeholder="pass" required></td></tr>
+                <tr><td>Email</td>
+                    <td><input type="email" name="email" placeholder="enter email"></td></tr>
+                <tr><td>phone number</td>
+                <td><input type="number" name="phone number" placeholder="enter phone number"> </td></tr>
+                <tr><td>Qualification</td>
+                    <td><input type="radio" name="qual" checked value="BE/BTECH">BE/BTECH
+                    <input type="radio" name="qual" checked value="BSC">BSC </td></tr>
+                <tr>
+                    <td>Birth date</td>
+                    <td><input type="date" min="1998-9-1" max="2019-12-31"></td>
+                </tr>
+                <tr><td>Technology</td>
+                    <td><select name="course" multiple size="3">
                     <option >--select--</option>
                     <option >javascript</option>
                     <option >python</option>
                     <option>html</option>
-                </select></th></tr>
-        </table>
+                </select></td></tr>
+                <tr>
+                    <td> </td>
+                    <td><input type="submit" value="Register">
+                    <input type="reset" value="clear"></td>
+                </tr>
+        
     </form>
+    </table>
     
 </body>
 </html>

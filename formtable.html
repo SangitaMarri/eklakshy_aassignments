@@ -6,31 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-<table border="1">
-<form>
+<table border="1" >
+<form action="about.html">
     <tr>
-    <th>Name<input type="text" name="username" placeholder="enter name"><br></th></tr>
-    <tr><th>Password<input type="password" name="password" placeholder="pass"><br></th></tr>
-    <tr> <th>Gender<input type="radio" name="gen1" checked value="male">male
-        <input type="radio" name="gen1" checked value="female">female <br></th></tr>
-     <tr><th>Hobbies<input type="checkbox" name="Hobbies" checked value="sports">sports
+    <td>Name</td>
+    <td><input type="text" name="username" placeholder="enter name" required></td></tr>
+    <tr><td>Password</td>
+        <td><input type="password" name="password" placeholder="pass"></td></tr>
+    <tr> <td>Gender</td>
+        <td><input type="radio" name="gen1" checked value="male">male
+        <input type="radio" name="gen1" checked value="female">female </td></tr>
+     <tr><td>Hobbies</td>
+        <td><input type="checkbox" name="Hobbies" checked value="sports">sports
      <input type="checkbox" name="Hobbies" checked value="music">music
     <input type="checkbox" name="Hobbies" checked value="reading">reading
-    <input type="checkbox" name="Hobbies" checked value="dance">dance</th></tr>
-    <tr><th>Technology<select name="course" multiple size="3">
+    <input type="checkbox" name="Hobbies" checked value="dance">dance</td></tr>
+    <tr><td>Technology</td>
+        <td><select name="course" multiple size="3">
         <option>--select</option>
         <option>javascript</option>
         <option>html</option>
-        <option>python</option></th></tr>
-    <tr><th> </select>
-    <br>
-    <textarea rows="10" cols="10"></textarea>
-    <br>
-    <input type="submit" value="Register">
-    <input type="reset" value="clear"></th>
+        <option>python</option></td></tr>
+    </select>
+
+    <tr>
+    <td>Text area</td>
+    <td><textarea rows="10" cols="10"></textarea></td>
     </tr>
-</table>
+   <tr><td> </td>
+    <td> <input type="submit" value="Register">
+    <input type="reset" value="clear"></td></tr>
+    
+
 </form>
+</table>
     
 </body>
 </html>
