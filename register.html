@@ -4,37 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #my1,#my2,#my3,#my4,#my5,#my6,#my7,#my8{
+            background-color: teal;
+            color: tomato;
+        }
+        #i1,#i2,#i3,#i4,#i5,#i6,#i7,#i8{
+            background-color: pink;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <table border="1">
     <form action="about.html">
         
             <tr>
-                <td>Name</td>
-                <td><input type="text" name="username" placeholder="enter name" required></td> </tr>
-                <tr><td>password</td>
-                    <td><input type="password" name="password" placeholder="pass" required></td></tr>
-                <tr><td>Email</td>
-                    <td><input type="email" name="email" placeholder="enter email"></td></tr>
-                <tr><td>phone number</td>
-                <td><input type="number" name="phone number" placeholder="enter phone number"> </td></tr>
-                <tr><td>Qualification</td>
-                    <td><input type="radio" name="qual" checked value="BE/BTECH">BE/BTECH
+                <td id="my1">Name</td>
+                <td id="i1"><input type="text" name="username" placeholder="enter name" required></td> </tr>
+                <tr><td id="my2">password</td>
+                    <td id="i2"><input type="password" name="password" placeholder="pass" required></td></tr>
+                <tr><td id="my3">Email</td>
+                    <td id="i3"><input type="email" name="email" placeholder="enter email"></td></tr>
+                <tr><td id="my4">phone number</td>
+                <td id="i4"><input type="number" name="phone number" placeholder="enter phone number"> </td></tr>
+                <tr><td id="my5">Qualification</td>
+                    <td id="i5"><input type="radio" name="qual" checked value="BE/BTECH">BE/BTECH
                     <input type="radio" name="qual" checked value="BSC">BSC </td></tr>
                 <tr>
-                    <td>Birth date</td>
-                    <td><input type="date" min="1998-9-1" max="2019-12-31"></td>
+                    <td id="my6">Birth date</td>
+                    <td id="i6"><input type="date" min="1998-9-1" max="2019-12-31"></td>
                 </tr>
-                <tr><td>Technology</td>
-                    <td><select name="course" multiple size="3">
+                <tr><td id="my7">Technology</td>
+                    <td id="i7"><select name="course" multiple size="3">
                     <option >--select--</option>
                     <option >javascript</option>
                     <option >python</option>
                     <option>html</option>
                 </select></td></tr>
                 <tr>
-                    <td> </td>
-                    <td><input type="submit" value="Register">
+                    <td id="my8"> </td>
+                    <td id="i8"><input type="submit" value="Register">
                     <input type="reset" value="clear"></td>
                 </tr>
         

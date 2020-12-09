@@ -4,39 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+  #my1,#my2,#my3,#my4{
+       background-color: yellow;
+       color: red;
+    
+       width: 100%;
+   }
+   #t1{
+       background-color: teal;
+   }
+    </style>
 </head>
 <body>
     
  <form>
-    <table border="1">
-        <tr>
-     <input type="text" placeholder=""></tr>
-     <tr>
-    <td> <input type="button" value="7"></td>
+     
+    <table border="1" cellpadding="10" >
+        <tr id="t1">
+            <td colspan="4">
+     <input type="text" ></td></tr>
+     <tr id="my1">
+    <td> <input type="button" value="7" ></td>
      <td><input type="button" value="8"></td>
      <td><input type="button" value="9"></td>
      <td><input type="button" value="*"></td>
      
      </tr>
-     <tr>
+     <tr id="my2">
      <td><input type="button" value="4"></td>
     <td><input type="button" value="5"></td>
      <td><input type="button" value="6"></td>
     <td> <input type="button" value="-"></td>
     </tr>
-     <tr>
+     <tr id="my3">
      <td><input type="button" value="1"></td>
     <td><input type="button" value="2"></td>
      <td><input type="button" value="3"></td>
      <td><input type="button" value="+"></td>
      </tr>
-     <tr>
+     <tr id="my4">
     <td> <input type="button" value="C"></td>
     <td> <input type="button" value="0"></td>
      <td><input type="button" value="."></td>
      <td><input type="button" value="="></td>
      </tr>
     </table>
+     
 </form>
 
 </body>
