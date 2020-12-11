@@ -5,29 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #menu li{
-            float:left;
-            margin: 10px;
-            padding: 20px;
-            border:1px solid;
-            color: greenyellow;
-        
-        }
-        a{
-            text-decoration: none;
-            color: green;
-        }
+      
+       a{
+           text-decoration: none;
+           color: blueviolet;
+           font-size: 20px;
+           font-weight: 700;
+       }
+       img{
+           height:250px;
+           width: 1000px;
+       }
+       header{
+           background: pink;
+           padding: 2px
+       }
+       .container{
+           padding: 5px 5px;
+       }
+       footer{
+           background: greenyellow;
+       }
+       ul{
+           margin: 0;
+           padding: 0;
+       }
+       ul li{
+           padding: 5px;
+           color: red;
+
+       }
+       ul li span{
+           display: block;
+           font-size: 20px;
+           margin-bottom: 0px
+           color: white;
+       }
+       .container{
+           display:grid;
+           grid-template-columns: 66% auto;
+           padding: 10px 4px;
+
+       }
+       ul{
+           display: grid;
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           grid-template-columns: repeat(5,auto);
+           grid-template-rows: repeat(2,auto);
+       }
+       img{
+           width: 300px;
+           justify-self: center;
+       }
+       body{
+           font-family: sans-serif;
+           background: red;
+           margin: 0;
+           color: white;
+           display: grid;
+           grid-template-columns: auto;
+           grid-template-rows:  auto 60% 40%;
+           grid-template-areas: 
+           "header"
+           "body"
+           "footer"
+           
+           
+           ;
+           
+       }
+       header{
+           grid-area: header;
+       }
+       .container{
+           grid-area: body;
+       }
+       footer{
+           grid-area: footer;
+       }
+       ul,.container{
+           grid-template-columns: auto;
+           grid-template-rows: auto;
+       }
+       .container{
+           text-align: center;
+       }
+
 
     </style>
 </head>
 <body>
-    <ul style="list-style-type: none;" id="menu">
-    <li><a href="about.html">About us</a></li>
-<li><a href="register.html">Register here</a></li>
-<li><a href="profile.html">Our profile</a></li>
-<li><a href="contact.html">Enter your contact details</a></li>
-<li><a href="gallery.html">our images</a></li>
-</ul>
+    <header>
+        <a href="#">Pot Printing</a>
+    </header>
+    
+    <div class="container">
+        <div id="content">
+            <h1>About us</h1>
+            <a href="about.html"> click here to know about us</a>
+        </div>
+        <img src="pots.jpg">
+    </div>
+    <footer>
+        <ul>
+           
+            <li>
+                <span>Our profile</span>
+                <a href="profile.html">click here to view profile</a>
+            </li>
+            <li>
+                <span>Your contacts</span>
+                <a href="contact.html"> Click here to fill your contact details.</a>
+
+            </li>
+            <li>
+                <span>Our images</span>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <span>Gamezone</span>
+                <a href="gamezone.html">Click here to play games</a>
+            </li>
+        </ul>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
     
 </body>
 </html>

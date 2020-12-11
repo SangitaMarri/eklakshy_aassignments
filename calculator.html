@@ -4,54 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/css">
-  #my1,#my2,#my3,#my4{
-       background-color: yellow;
-       color: red;
-    
-       width: 100%;
-   }
-   #t1{
-       background-color: teal;
-   }
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: cadetblue;
+            padding-bottom: 30px;
+            padding-top: 30px;
+
+        }
+        .calculator{
+            max-width: 400px;
+            margin: 0 auto;
+            border: 2px solid gold;
+            border-radius: 5px;
+        }
+        .calc-button{
+            background: rgba(0, 0,0, 0.5);
+            border:1px solid black;
+            padding: 20px;
+            color:white;
+            border-radius: 5px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .calculator input{
+            background: none;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            padding: 10px;
+            width: 100%;
+            border-bottom: 2px solid white;
+            color:thistle;
+            text-align: right;
+            font-size: 40px;
+            border-radius: 0;
+        }
+        .calculator-buttons{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .calculator-buttons{
+            grid-gap: 15px;
+        }
+        .calc-button,.calculator input{
+            font-family: sans-serif;
+        }
     </style>
 </head>
 <body>
-    
- <form>
-     
-    <table border="1" cellpadding="10" >
-        <tr id="t1">
-            <td colspan="4">
-     <input type="text" ></td></tr>
-     <tr id="my1">
-    <td> <input type="button" value="7" ></td>
-     <td><input type="button" value="8"></td>
-     <td><input type="button" value="9"></td>
-     <td><input type="button" value="*"></td>
-     
-     </tr>
-     <tr id="my2">
-     <td><input type="button" value="4"></td>
-    <td><input type="button" value="5"></td>
-     <td><input type="button" value="6"></td>
-    <td> <input type="button" value="-"></td>
-    </tr>
-     <tr id="my3">
-     <td><input type="button" value="1"></td>
-    <td><input type="button" value="2"></td>
-     <td><input type="button" value="3"></td>
-     <td><input type="button" value="+"></td>
-     </tr>
-     <tr id="my4">
-    <td> <input type="button" value="C"></td>
-    <td> <input type="button" value="0"></td>
-     <td><input type="button" value="."></td>
-     <td><input type="button" value="="></td>
-     </tr>
-    </table>
-     
-</form>
+<div class="calculator">
+<input type="number">
+<div class="calculator-buttons">
+    <button class="calc-button">C</button>
+    <button class="calc-button">/</button>
+
+    <button class="calc-button">7</button>
+    <button class="calc-button">8</button>
+    <button class="calc-button">9</button>
+    <button class="calc-button">*</button>
+
+    <button class="calc-button">4</button>
+    <button class="calc-button">5</button>
+    <button class="calc-button">6</button>
+    <button class="calc-button">-</button>
+
+    <button class="calc-button">1</button>
+    <button class="calc-button">2</button>
+    <button class="calc-button">3</button>
+    <button class="calc-button">+</button>
+
+    <button class="calc-button">0</button>
+    <button class="calc-button">=</button>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

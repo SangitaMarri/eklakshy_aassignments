@@ -6,16 +6,51 @@
     <title>Document</title>
     <style>
         div{
-            display:inline-block;
-            border-radius: 50px;
-            background-color: crimson;
-            animation: square-to-circle 2s 1s infinite alternate;
+           background-image: url(bgp.jpg);
+                      border-radius: 700px;
+           width: 200px;
+           height: 200px;
+           position: relative;
+           padding-left: 10px;
+           padding-right: 10x;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           margin-top: 10px;
+           margin-bottom: 10px;
+           animation-name: example;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
         }
+        @keyframes example{
+            0%{
+                background-color: blueviolet;
+                left: 0px;
+                top: 0px;
+            }
+            100%{
+                background-color: red;
+                left: 100%;
+                top: 0px;
+            }
+        }
+    
+           
+
+
+
+
+        
     </style>
 </head>
-<body>
-    <div style="background-color: yellow; width: 100px;height: 100px;"></div>
-    <div style="background-color: blue; width: 100px;height: 100px;"></div>
-    
+<h4 style="text-align: center; font-size: larger; ">rolling balls</h4>
+<hr>
+
+<body style="background-color: aqua;">
+   
+    <div></div>
+    <hr>
+    <div></div>
+    <hr>
+    <div></div>
 </body>
 </html>
