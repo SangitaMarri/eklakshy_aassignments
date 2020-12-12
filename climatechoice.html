@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function suggestUser(){
+             
+            climat=document.getElementById('climate').value;
+            
+            switch(climat){
+                case 'Summer':
+                {
+                    document.getElementById('mydiv').innerHTML='<br>eat icecream,go for swimming' ;
+                    
+                }
+                break;
+                
+                case 'Rainy':{
+                    document.getElementById('mydiv').innerHTML='<br>drink tea and samosa' ;
+                   
+                } break;
+                case 'winter':
+                    {
+                        document.getElementById('my').innerHTML='<br>drink hot soup and sleep' ;
+                        
+                    }break;
+                case 'windy':{
+                    document.getElementById('mydiv').innerHTML='<br>enjoy cycling and kite flying' ;
+                   
+                }break;
+            
+            }
+            
+        }
+    
+    </script>
+</head>
+<body>
+<select onchange="suggestUser()" id="climate" >
+    <option>--select--</option>
+<option value="Summer">Summer</option>
+<option value="Rainy">Rainy</option>
+<option value="winter">winter</option>
+<option value="windy">windy</option>
+</select>
+<div id="mydiv" style="background-color: orange; color: red;"></div>
+    
+</body>
+
+
+</html>

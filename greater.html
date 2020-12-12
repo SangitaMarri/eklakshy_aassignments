@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var num1=parseInt(prompt("enter num1"));
+        document.write('<br>num1:'+num1);
+        var num2=parseInt(prompt("enter num2"));
+        document.write('<br>num2:'+num2);
+        var num3=parseInt(prompt("enter num3"));
+        document.write('<br>num3:'+num3);
+        if(isNaN(num1)||isNaN(num2)||isNaN(num3)){
+            alert('enter a number');
+
+        }
+        else
+        {
+            result=num1>num2 ?(num1>num3 ? num1:num3):(num2>num3 ? num2:num3);
+            
+            document.write('<br>greater num:'+result)
+        }
+
+
+
+    </script>
+
+</body>
+</html>

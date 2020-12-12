@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var laptop=['Dell','sony','lenovo'];
+        var mobile=['samsung','vivo','oppo'];
+        var Tv=['philips','onida','LG'];
+        function lists(){
+        choices=document.getElementById("choice").value;
+        var mydivs=document.getElementById("mydiv");
+        mydivs.innerHTML='Welcome to ABC showroom <br>'
+       
+        switch(choices){
+            case 'laptop':
+                laptop.forEach(function(element) {
+
+                
+                
+              mydivs.innerHTML+=element+' <br>';
+                });
+                break;
+                case 'mobile' :
+                    mobile.forEach(function(element){
+                        mydivs.innerHTML+=element+' <br>';
+                    });break;
+                    
+                case 'Tv':
+                    Tv.forEach(function(element){
+                    
+                        mydivs.innerHTML+=element+' <br>';
+                    });break;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <select  id="choice" onchange='lists()'>
+        <option>--select--</option>
+    <option value="laptop">Laptop</option>
+    <option value="mobile">mobile</option>
+    <option value="Tv">TV</option>
+    
+    
+    </select>
+    <div id="mydiv" style="background-color: blue; color: red;"></div>
+</body>
+</html>
